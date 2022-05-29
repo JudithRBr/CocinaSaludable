@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocina Saludable</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/registrar.js"></script>
+    <script type="text/javascript" src="js/contacto.js"></script>
+</head>
+<body>
+    <header>
+      <div class="container">
+          <p class="logo"> Cocina Saludable </p>
+          <nav>
+              <a href="#nuestras-secciones"> Recetas </a>
+              <a href="#somos-saludables"> Información </a>
+              <a href="#contacto"> Contacto</a>
+          </nav>
+      </div>
+    </header>
+    <section class="section-comienza">
+        <div>
+            <img src="img/hero-2.jpg" alt="Imagen comida" class="hero"</img>
+            
+        </div>
+        <h1 class="section-comienza-h1"> Porque eres lo que comes!</h1>
+        <button onclick="registrarAlert()" class="section-comienza-btn"> Registrate!</button>
+    </section>
+    
+    <section id="somos-saludables">
+        <div class="container">
+           <h2> Cocina Saludable </h2>
+           <p>
+            Una alimentación saludable consiste en ingerir una variedad de alimentos que te brinden los nutrientes que necesitas para mantenerte sana, sentirte bien y tener energía. Estos nutrientes incluyen las proteínas, los carbohidratos, las grasas, el agua, las vitaminas y los minerales. .Aquí encontrarás desde recetas sencillas para el día a día, hasta recetas más elaboradas pero muy ricas y nutritivas. Comencemos a ser conscientes de nuestra alimentación e implementar pequeños cambios para obtener grandes resultados en nuestra salud. Nutrirnos debe ser un habito saludable!
+           </p>
+        </div>
+   </section>
+   
+   <section id="nuestras-secciones">
+       <div class="container">
+         <h2>Nuestras Secciones </h2>
+        <div class="programas">
+             <div class="carta">
+                   <h3> Recetas para Almuerzo y Cena </h3>
+                   <div>
+                        <img src="./img/almuerz-saludable.jpg" alt="Imagen comida" class="carta-img"</img>
+                   </div>
+                   <p> </p>
+                   <button>+ Info </button>
+            </div>
+       <div class="carta">
+             <h3> Recetas Dulces Saludables</h3>
+             <div>
+                <img src="./img/dulce-saludable.jpg" alt="Imagen comida" class="carta-img"</img>
+             </div>
+             <p></p>
+             <button>+ Info </button>
+       
+       </div>
+       
+       <div class="carta">
+            <h3> Recetas sin Tacc </h3>
+            <div>
+                <img src="./img/sin-tacc.jpg" alt="Imagen comida" class="carta-img"</img>
+            </div>
+            <p></p>
+            <button>+ Info </button>
+       
+        </div>
+    </div>
+    </div>
+ </section>
+  <section id="caracteristicas">
+     <div class="container">
+         <ul>
+          <li>​💯 Faciles </li>
+          <li>​💯 Saludables </li>
+          <li>​💯 Ricas </li>
+          </ul>
+     </div> 
+  </section>
+  <section id="contacto">
+      <h2> Contacto</h2>
+      <form class="form-contacto" onsubmit="return validarSubmitEnviarContacto();" action="miproyecto.html">
+        <label for="nombre">*Nombre:</label>
+        <input id="nombre-contacto-input-id" type="text"/><br><br>
+        <label for="apellidos">*Apellidos:</label>
+        <input id="apellidos-contacto-input-id" type="text"/><br><br>
+        <label for="email">*Email:</label>
+        <input id="email-contacto-input-id" type="email" placeholder="ejemplo@hotmail.com" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"/><br><br>
+        <label for="descripcion">*Descripción:</label>
+        <input id="descripcion-comentario-contacto-input-id" class="descripcion-comentario" type="text" size="32" placeholder="Ingrese su comentario"/><br><br>
+        <input type="submit" value="Enviar!">
+     </form>
+  </section>
+  <footer>
+    <div class="container">
+        <p>&copy; Cocina Saludable 2022</p>
+    </div>
+</footer>  
+</body>
+</html>
